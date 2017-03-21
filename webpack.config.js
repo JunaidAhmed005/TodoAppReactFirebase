@@ -20,13 +20,12 @@ module.exports = {
     	filename: './public/bundle.js'
   	},
   	resolve: {
-  		// modulesDirectories: [
-			// 	'node_modules',
-			// 	'./app/components'
-			// ],
+  		modules: [
+				'node_modules',
+				'./app/components'
+			],
     	alias: {
-          applicationStyles: __dirname + "/app/styles/app.scss",
-					TodoApp: __dirname + "/app/components/TodoApp.jsx"
+          applicationStyles: __dirname + "/app/styles/app.scss",	
     	},
     	extensions: ['.js', '.jsx']
   	},
