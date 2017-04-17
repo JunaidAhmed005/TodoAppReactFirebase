@@ -13,28 +13,6 @@ var TodoApp = React.createClass({
             showCompleted: false,
             searchText: "",
             todos: TodoAPI.getTodos() 
-            // [
-            //     {
-            //         id: uuid(),
-            //         text: "Walk the dog",
-            //         completed: false
-            //     },
-            //     {
-            //         id: uuid(),
-            //         text: "Clean the yard",
-            //         completed: true
-            //     },
-            //     {
-            //         id: uuid(),
-            //         text: "Leave mail on porch",
-            //         completed: true
-            //     },
-            //     {
-            //         id: uuid(),
-            //         text: "play video games",
-            //         completed: false
-            //     }
-            // ]
         }
     },
     componentDidUpdate: function() {
