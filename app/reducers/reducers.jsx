@@ -21,6 +21,7 @@ export var showCompletedReducer = (state = false, action) => {
     }
 };
 
+// todos Reducer (add and toggle todo)
 export var todosReducer = (state = [], action) => {
     switch (action.type) {
         case "ADD_TODO":
