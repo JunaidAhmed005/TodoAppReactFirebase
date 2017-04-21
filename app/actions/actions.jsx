@@ -14,6 +14,14 @@ export var addTodo = (text) => {
     };
 };
 
+// AddTodos action generator
+export var addTodos = (todos) => {
+    return {
+        type: "ADD_TODOS",
+        todos
+    };
+};
+
 // ToggleShowCompleted action generator
 export var toggleShowCompleted = () => {
     return {
