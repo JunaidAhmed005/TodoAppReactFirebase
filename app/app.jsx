@@ -1,6 +1,7 @@
 var React = require("react");
 var ReactDOM = require("react-dom");
 // Object Destructuring Syntax ES6 Feature
+var {Provider} = require("react-redux");
 var {Route, Router, IndexRoute, hashHistory} = require("react-router");
 
 var TodoApp = require("TodoApp");
@@ -24,6 +25,9 @@ $(document).foundation();
 require('style-loader!css-loader!sass-loader!applicationStyles');
 
 ReactDOM.render(
-	<TodoApp/>,
+		// todoapp and all its component now can access store
+	<Provider store={store}> 
+		<TodoApp/>
+	</Provider>,
 	document.getElementById("app")
 );
