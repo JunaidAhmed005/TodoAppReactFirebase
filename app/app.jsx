@@ -16,10 +16,6 @@ store.subscribe(()=> {
 	TodoAPI.setTodos(state.todos);
 });
 
-// store.dispatch(actions.addTodo("Clean the yard"));
-// store.dispatch(actions.setSearchText("yard"));
-// store.dispatch(actions.toggleShowCompleted());
-
 var initialTodos = TodoAPI.getTodos();
 store.dispatch(actions.addTodos(initialTodos));
 
