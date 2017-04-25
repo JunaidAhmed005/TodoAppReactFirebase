@@ -1,1 +1,1 @@
-ToDo Application React, Redux and Firebase
+ToDo Application React, Redux and Firebase (Database)
